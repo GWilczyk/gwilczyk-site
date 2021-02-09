@@ -123,6 +123,24 @@ nav a.nav-link {
 	transition: 0.2s ease-in-out;
 }
 
+.photo-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile-img {
+	width: 25rem;
+	border-radius: 50%;
+	padding: 0.3rem;
+	border: 1px solid var(--primary-orange);
+}
+
+.aboutMe-heading {
+	color: var(--primary-orange);
+	text-transform: uppercase;
+}
+
 @media (max-width: 768px) {
 	.particles-canvas {
 		display: none;
@@ -139,5 +157,11 @@ nav a.nav-link {
 	.navbar-brand {
 		max-width: 3.5rem;
 		height: 3.5rem;
+	}
+}
+
+@media (max-width: 468px) {
+	.profile-img {
+		width: 15rem;
 	}
 }

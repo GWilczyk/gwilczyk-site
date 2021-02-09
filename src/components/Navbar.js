@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/LOGO-min.png';
+import logo from '../assets/LOGO_GWILCZYK_DARK.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,7 +7,7 @@ const Navbar = () => {
 	return (
 		<nav className='navbar navbar-expand-lg'>
 			<div className='container'>
-				<a className='navbar-brand' href='#'>
+				<a className='navbar-brand' href='/'>
 					<img src={logo} alt='Logo' className='logo' />
 				</a>
 
@@ -26,32 +26,32 @@ const Navbar = () => {
 				<div className='collapse navbar-collapse' id='navbarSupportedContent'>
 					<ul className='navbar-nav ml-auto'>
 						<li className='nav-item'>
-							<a className='nav-link px-3' href='#'>
+							<a className='nav-link px-3' href='/'>
 								Home <span className='sr-only'>(current)</span>
 							</a>
 						</li>
 						<li className='nav-item'>
-							<a className='nav-link px-3' href='#'>
+							<a className='nav-link px-3' href='/'>
 								About Me
 							</a>
 						</li>
 						<li className='nav-item'>
-							<a className='nav-link px-3' href='#'>
+							<a className='nav-link px-3' href='/'>
 								Services
 							</a>
 						</li>
 						<li className='nav-item'>
-							<a className='nav-link px-3' href='#'>
+							<a className='nav-link px-3' href='/'>
 								How Work
 							</a>
 						</li>
 						<li className='nav-item'>
-							<a className='nav-link px-3' href='#'>
+							<a className='nav-link px-3' href='/'>
 								Portfolio
 							</a>
 						</li>
 						<li className='nav-item'>
-							<a className='nav-link px-3' href='#'>
+							<a className='nav-link px-3' href='/'>
 								Contacts
 							</a>
 						</li>
