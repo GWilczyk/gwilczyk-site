@@ -1,5 +1,5 @@
 import React from 'react';
-import author from '../assets/Costume_blanc.jpg';
+import author from '../assets/Costume_blanc_422x422_72x72.jpg';
 
 const AboutMe = () => {
 	return (
@@ -19,9 +19,8 @@ const AboutMe = () => {
 					</p>
 					<p>
 						Je crée des sites internet «responsive», c'est-à-dire dont
-						l'affichage s'adapte à la taille de l'écran de vos utilisateurs,
-						depuis celui des smartphones jusqu'aux extra-larges des ordinateurs
-						de bureau.
+						l'affichage s'adapte à la taille et la résolution des écrans des
+						utilisateurs (du smartphone aux écrans extra-larges).
 					</p>
 				</div>
 			</div>
