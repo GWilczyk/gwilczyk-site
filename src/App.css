@@ -1,6 +1,8 @@
 :root {
 	--primary-dark: #343a40;
 	/* --primary-dark: rgba(52, 58, 64, 0.6); */
+	--primary-dark-grey: #666666;
+	--primary-grey: #ccd1d9;
 	--primary-light-grey: #f4f4f4;
 	--primary-orange: #f9ab00;
 	--primary-orange-hover: rgba(249, 171, 0, 0.25);
@@ -149,7 +151,9 @@ nav a.nav-link {
 	background: var(--primary-light-grey);
 }
 
-.services h1 {
+.services h1,
+.experience h1,
+.aboutMe {
 	color: var(--primary-orange);
 	text-transform: uppercase;
 }
@@ -172,8 +176,16 @@ nav a.nav-link {
 	transform: translate(-50%, -50%);
 }
 
-.services .box {
-	height: 20rem;
+.services .row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	grid-column-gap: 1rem;
+}
+
+.services .row .box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	border-bottom: 5px solid var(--primary-orange);
 	background-color: var(--primary-white);
 	padding: 1rem;
@@ -195,6 +207,62 @@ nav a.nav-link {
 	color: var(--primary-orange);
 }
 
+.experience-wrapper {
+	position: relative;
+	padding: 3.5rem;
+	overflow: hidden;
+}
+
+.experience-wrapper::before {
+	position: absolute;
+	content: '';
+	height: 100%;
+	top: 0;
+	width: 0.125rem;
+	left: calc(50% - 0.0625rem);
+	background-color: var(--primary-grey);
+	z-index: 1;
+}
+
+.timeline-block {
+	width: calc(50% + 0.5rem);
+	display: flex;
+	justify-content: space-between;
+	clear: both;
+}
+
+.timeline-block-right {
+	float: right;
+}
+
+.timeline-block-left {
+	float: left;
+	direction: rtl;
+}
+
+.marker {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	border: 0.3125rem solid var(--primary-dark);
+	background-color: var(--primary-orange);
+	margin-top: 0.625rem;
+	z-index: 3;
+}
+
+.timeline-content {
+	width: 95%;
+	padding: 0 0.9375rem;
+	color: var(--primary-dark-grey);
+	direction: ltr;
+}
+
+.timeline-content h3 {
+	margin-top: 0.3125rem;
+	color: var(--primary-red);
+	font-weight: 900;
+}
+
 @media (max-width: 768px) {
 	.particles-canvas {
 		display: none;
@@ -211,6 +279,25 @@ nav a.nav-link {
 	.navbar-brand {
 		max-width: 3.5rem;
 		height: 3.5rem;
+	}
+	.experience {
+		padding-left: 1rem;
+	}
+	.experience .container {
+		padding-left: 0.125rem;
+	}
+	.experience-wrapper::before {
+		left: 0.5rem;
+		margin-bottom: 1.875rem;
+	}
+	.timeline-block-right {
+		float: none;
+		width: 100%;
+	}
+	.timeline-block-left {
+		float: none;
+		width: 100%;
+		direction: ltr;
 	}
 }
 

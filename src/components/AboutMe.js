@@ -11,7 +11,7 @@ const AboutMe = () => {
 					</div>
 				</div>
 				<div className='col-lg-6 col-xm-12'>
-					<h1 className='aboutMe-heading'>Développeur Full-Stack JavaScript</h1>
+					<h1 className='aboutMe'>Développeur Full-Stack JavaScript</h1>
 					<p>
 						Je suis Gwendal Wilczyk, développeur web orienté JavaScript. Les
 						technologies que j'utilise sont celles de la stack MERN (MongoDB,
