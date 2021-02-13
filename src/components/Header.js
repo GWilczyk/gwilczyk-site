@@ -5,13 +5,14 @@ const Header = () => {
 	return (
 		<div className='header-wrapper'>
 			<div className='main-info'>
-				<h1>Gwendal Wilczyk</h1>
+				<h1 className='pb-5'>Gwendal Wilczyk</h1>
 				<Typed
 					className='typed-text'
 					strings={[
-						'Développement Web',
+						'Développement web',
+						'Web Design',
 						'Référencement naturel SEO',
-						'Facebook Ads SMM',
+						'Facebook Ads',
 						'Google Ads',
 					]}
 					typeSpeed={100}
@@ -19,7 +20,7 @@ const Header = () => {
 					loop
 				/>
 				<a href='/' className='btn-main-offer'>
-					Contact Me
+					Contactez-moi
 				</a>
 			</div>
 		</div>

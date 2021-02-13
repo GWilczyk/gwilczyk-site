@@ -1,18 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-import Particles from 'react-particles-js';
+// import Particles from 'react-particles-js';
 
 import AboutMe from './components/AboutMe';
-import Experience from './components/Experience';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import Portfolio from './components/Portfolio';
 import Services from './components/Services';
 
 function App() {
 	return (
 		<>
-			<Particles
+			{/*	<Particles
 				className='particles-canvas'
 				params={{
 					particles: {
@@ -35,12 +35,12 @@ function App() {
 						},
 					},
 				}}
-			/>
+			/>*/}
 			<Navbar />
 			<Header />
-			<AboutMe />
 			<Services />
-			<Experience />
+			<Portfolio />
+			<AboutMe />
 		</>
 	);
 }
