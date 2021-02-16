@@ -169,6 +169,7 @@ nav a.nav-link {
 .experience h1,
 .portfolio-wrapper h1,
 .testimonials h1,
+.contacts h1,
 .aboutMe {
 	color: var(--primary-orange);
 	text-transform: uppercase;
@@ -359,10 +360,6 @@ nav a.nav-link {
 	padding-bottom: 4rem;
 	margin-bottom: 0;
 	width: 100%;
-	/* display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center; */
 }
 
 .testimonials-content {
@@ -373,7 +370,7 @@ nav a.nav-link {
 }
 
 .myCarousel {
-	width: 54%;
+	width: 60%;
 	height: 17.875rem;
 	color: var(--primary-white);
 	background: transparent;
@@ -411,6 +408,87 @@ nav a.nav-link {
 .carousel .slide img {
 	width: 10rem !important;
 	border-radius: 50%;
+}
+
+.contacts {
+	background-color: var(--primary-dark-grey);
+	padding: 3rem 0;
+}
+
+.contacts p {
+	color: var(--primary-light-grey);
+}
+
+.contacts input,
+.contacts textarea {
+	width: 100%;
+	box-sizing: border-box;
+	background: none;
+	resize: none;
+	border: none;
+	border-bottom: 0.2rem solid var(--primary-dark-grey);
+	border-radius: 0;
+	color: var(--primary-light-grey);
+	outline: 0 !important;
+	box-shadow: none !important;
+	top: 0;
+	margin-bottom: 1rem;
+	padding-left: 0 !important;
+}
+
+.contacts .container {
+	padding: 4rem 0;
+}
+
+.contacts textarea {
+	height: 10rem !important;
+	margin: 2rem 0;
+}
+
+.contacts input:focus,
+.contacts textarea:focus {
+	background: transparent;
+	color: var(--primary-orange);
+	border-bottom: 0.2rem solid var(--primary-dark-grey);
+}
+
+.contact-btn {
+	margin: 1rem 0 0;
+	width: 100%;
+	background: none;
+	border: 2px solid var(--primary-orange);
+	text-transform: uppercase;
+	font-weight: 600;
+	border-radius: 1rem;
+	padding: 1rem 1.2rem;
+	color: var(--primary-orange);
+	transition: 0.2s ease-in-out;
+	/* background-color: var(--primary-dark); */
+}
+
+.contact-btn:hover {
+	text-decoration: none;
+	background-color: var(--primary-orange);
+	color: var(--primary-dark);
+	transition: 0.2s ease-in-out;
+}
+
+.line {
+	position: relative;
+	width: 0;
+	height: 0.125rem;
+	background-color: var(--primary-orange);
+	display: inline-block;
+}
+
+input:focus + .line,
+textarea:focus + .line {
+	width: 100%;
+	transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+	margin: -0.3rem 0;
 }
 
 @media (max-width: 768px) {
@@ -451,6 +529,15 @@ nav a.nav-link {
 	}
 	.portfolio-image-popupbox {
 		width: 100%;
+	}
+	.contacts {
+		overflow-x: hidden;
+	}
+	.contacts .container {
+		padding: 0 1rem;
+	}
+	.contacts p {
+		padding: 0 0.5rem;
 	}
 }
 
